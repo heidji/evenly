@@ -1,25 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import Loader from './components/loader';
+import Cookies from 'js-cookie'
+import Auth from "./pages/Auth";
+import Main from "./pages/Main";
+
+type Place = {
+  thumbnail: string;
+}
+
+declare global {
+  interface Window { auth: any; }
+}
 
 function App() {
+
+  const [auth, setAuth] = useState<string>('');
+
+  if(typeof Cookies.get('auth') == 'undefined'){
+    return <Auth/>
+  }else{
+    window.auth = Cookies.get('auth');
+    return <Main/>
+  }
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Loader/>
   );
 }
 

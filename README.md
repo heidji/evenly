@@ -1,4 +1,4 @@
-# Project Setup
+### Project Setup
 
 To prepare running this React App, you need to have the latest LTS node.js version installed on your local machine.  
 More information: https://nodejs.org/en/

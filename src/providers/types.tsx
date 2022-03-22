@@ -13,4 +13,12 @@ export type Place = {
     longitude: number;
   };
   address: string;
+  photos?: Photo[];
+}
+
+export type Photo = {
+  prefix: string;
+  suffix: string;
+  width: number;
+  height: number;
 }

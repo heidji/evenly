@@ -57,7 +57,7 @@ function Auth() {
         </Dialog>
         <Box sx={{mt: 7, width: '100%', display: 'flex', justifyContent: 'center'}}>
           <FormGroup row>
-            <TextField sx={{width: {sm: '300px', lg: '400px'}}} InputLabelProps={{shrink: true}}
+            <TextField sx={{width: {xs: '300px', lg: '400px'}}} InputLabelProps={{shrink: true}}
                        label={'Authorization token'} variant="outlined" placeholder="username" onChange={changeVal}
                        value={val}/>
             <Button variant="contained" disableElevation onClick={setAuth}>

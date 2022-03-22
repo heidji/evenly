@@ -176,7 +176,7 @@ function Main() {
       <Box sx={{width: '100%', display: 'flex', alignItems: 'center', flexDirection: 'column', height: '100vh', overflow: 'hidden'}}>
         <Box sx={{position: 'relative', height: {xs: '500px', md: '500px'}, width: {xs: '100%', lg: '700px'}}}>
           <GoogleMapReact
-            bootstrapURLKeys={{key: 'AIzaSyA096HyyxYz5KabXS2Hz2f5lEqEsaV9MTM'}} // disposable key
+            bootstrapURLKeys={{key: atob('QUl6YVN5QTA5Nkh5eXhZejVLYWJYUzJIejJmNWxFcUVzYVY5TVRN')}} // disposable key
             defaultCenter={{
               lat: 52.500342,
               lng: 13.425170

@@ -16,5 +16,10 @@ Entering a functioning token should take you to the POI map around Evenly HQ in 
 ### Usage
 You can click the pointers on the map or select any POI from the list below the map to view more details about the Venue.
 
-
+### 3rd Party packages
+|package | description                                        |
+|---|----------------------------------------------------|
+| @mui/* | Material Design UI and easy to use styling + icons |
+|google-map-react | Google maps JS wrapper for simplicity              |  
+|js-cookie | Out of the box browser cookie manipulation         |  
 
